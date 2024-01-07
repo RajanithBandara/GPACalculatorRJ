@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Test
+        </title>
+
+    </head>
+<body>
+    <div class="container" id="container">
+        <div class="inputbox">
+            <input type="text" name="test[1]" id="row" placeholder="Test 1">
+        </div>
+        <div class="submitbtn">
+            <input type="button" name="Add" value="Add Subject" onclick="addRow()">
+        </div>
+        <script>
+            x=0;
+            function addRow(){
+                x = x+1;
+                var textfield = document.getElementById("row");
+                var container = document.getElementById("container");
+                var newfield = document.createElement("input");
+
+                newfield.type = "text";
+                newfield.name = "test["+x+"]"
+                newfield.placeholder = "Test";
+                var breakpoint = document.createElement("br");
+
+                container.appendChild(newfield);
+                container.appendChild(breakpoint);
+            }
+
+        </script>
+    </div>
+</body>
+</html>
