@@ -25,13 +25,13 @@ function addModule() {
     input3.placeholder = "Enter the credits You have got";
 
     container1.appendChild(input1);
-    container1.after(linebreak);
+    //container1.after(linebreak);
 
     container2.appendChild(input2);
-    container2.after(linebreak);
+    //container2.after(linebreak);
 
     container3.appendChild(input3);
-    container3.after(linebreak);
+    //container3.after(linebreak);
 
     console.log(x);
 }
@@ -40,10 +40,19 @@ function removeModule() {
     var container1 = document.getElementById("subject-module");
     var container2 = document.getElementById("grade-module");
     var container3 = document.getElementById("credits-got");
+    var brelement = container1.lastElementChild;
+    var brelement2 = container2.lastElementChild;
+    var brelement3 = container3.lastElementChild;
 
     container1.removeChild(container1.lastChild);
     container2.removeChild(container2.lastChild);
     container3.removeChild(container3.lastChild);
+    if (brelement && brelement.tagName === 'BR'){
+        container1.removeChild(brelement);
+        container2.removeChild(brelement2);
+        container3.removeChild(brelement3);
+    }
+    
 
     x = x - 1;
     console.log(x);
