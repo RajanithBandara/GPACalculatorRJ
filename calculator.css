@@ -137,7 +137,8 @@ h1{
         justify-content: center;
         align-items: center;
         align-content: center;
-        min-width: 100%;
+        min-width: 96%;
+        width: 96%;
         height: 100vh;
         min-height: 100vh;
         display: flex;
@@ -145,6 +146,7 @@ h1{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        padding: 2%;
     }
     .sub-main-div{
         background-color: rgb(216 208 223 / 38%);
@@ -204,5 +206,53 @@ h1{
         background-color: #7b47b9;
     }
     .add:hover{
+        background-color: #59586d;
+        border-radius: 3px;
+    }
+    .remove{
+        background-color: #a63737;
+    }
+    .remove:hover{
+        border-radius: 3px;
+        background-color: #5c1717;
+    }
+
+    .calculate{
+        background-color: #2d8223;
+    }
+    .calculate:hover{
+        border-radius: 3px;
+        background-color: #215626;
+    }
+    .add:active,.remove:active,.calculate:active{
+        background: azure;
+        padding: 0.5%;
+    }
+    .answer-div{
+        width: 100%;
+        min-width: 100%;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .answer{
+        margin: 10px;
+        width: auto;
+        border:0;
+        border-radius: 18px;
+        padding: 2%;
+        text-align: center;
+        font-weight: bold;
+        font-family: system-ui;
+        box-shadow: 0px 2px 2px 2px #00000052;
+        background-color: #f3fbfaa8;
+        backdrop-filter: blur(18px);
+        color: #3a3737;
+        transition: all 1s ease-in-out;
+    }
+    .answer:hover{
+        background: #ffffffcc;
+    }
     
 }
