@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        #profile {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="profile">
+        <h1>User Profile</h1>
+        <p id="username">Username: JohnDoe</p>
+        <p id="email">Email: john.doe@example.com</p>
+        <p id="gpa">Current GPA: 3.8</p>
+    </div>
+
+    <script>
+        // In a real-world scenario, you would fetch this data from the server
+        // For demonstration purposes, I'm setting static values
+        var userData = {
+            username: 'JohnDoe',
+            email: 'john.doe@example.com',
+            gpa: 3.8
+        };
+
+        // Update the HTML content with user data
+        document.getElementById('username').innerText = 'Username: ' + userData.username;
+        document.getElementById('email').innerText = 'Email: ' + userData.email;
+        document.getElementById('gpa').innerText = 'Current GPA: ' + userData.gpa;
+    </script>
+
+</body>
+</html>

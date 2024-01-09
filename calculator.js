@@ -9,7 +9,7 @@ function addModule() {
     var input1 = document.createElement("input");
     var input2 = document.createElement("input");
     var input3 = document.createElement("input");
-    var linebreak = document.createElement("br");
+    //var linebreak = document.createElement("br");
 
     input1.type = "text";
     input2.type = "text";
@@ -118,6 +118,7 @@ function calculateGPA(){
     }
     console.log(credits_to_gpa);
     var total_crdts_to_gpa = 0;
+    
     for (var i=0; i<credits_to_gpa.length; i++){
         total_crdts_to_gpa = total_crdts_to_gpa + credits_to_gpa[i];
     }
@@ -127,4 +128,14 @@ function calculateGPA(){
     var gpa_rounded = gpa.toFixed(2);
     console.log(gpa_rounded);
     document.getElementById("answer").value = gpa_rounded;
+
+    if (document.getElementById('answer').value == "") {
+        document.getElementById('save').style.display = "none";
+    } else {
+        document.getElementById('save').style.display = "block";
+    }
+}
+
+function sendbtnremove(){
+    document.getElementById('save').style.display = "none";
 }

@@ -132,6 +132,35 @@ h1{
 .answer:hover{
     background: #ffffffcc;
 }
+#save,#reset{
+    padding:1.2%;
+    margin: 2px;
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0px 1px 1px 1px #0000004d;
+    font-family: system-ui;
+    font-weight: 500;
+    transition: all 0.45s ease-in-out;
+}
+#save{
+    background-color: #b5daac;
+    font-size: large;
+    
+}
+#save:hover{
+    background-color: green;
+    color:white;
+    border-radius: 4px;
+}
+#reset{
+    background-color: #c06b6b;
+}
+#reset:hover{
+    background-color: #960000;
+    color: white;
+    border-radius: 4px;
+}
+
 
 @media  screen  and (max-width:768px){
     .main-div{

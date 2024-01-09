@@ -1,37 +1,97 @@
+
+<!--Website: wwww.codingdung.com-->
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Test
-        </title>
+<html lang="en">
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodingDung | Profile Template</title>
+    <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
 <body>
-    <div class="container" id="container">
-        <div class="inputbox">
-            <input type="text" name="test[1]" id="row" placeholder="Test 1">
+    <div class="container light-style flex-grow-1 container-p-y">
+        <h4 class="font-weight-bold py-3 mb-4">
+            My Account
+        </h4>
+        <div class="card overflow-hidden">
+            <div class="row no-gutters row-bordered row-border-light">
+                <div class="col-md-3 pt-0">
+                    <div class="list-group list-group-flush account-settings-links">
+                        <a class="list-group-item list-group-item-action active" data-toggle="list"
+                            href="#account-summery">Account Summery</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#courses">Courses</a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="account-summery">
+                            <div class="container mt-4">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <!-- Current GPA -->
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Current GPA</h5>
+                                        <p class="card-text">Your current GPA is: <strong>3.75</strong></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <!-- Predicted GPA Level -->
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Predicted GPA Level</h5>
+                                        <p class="card-text">Based on your performance, your predicted GPA level is: <strong>Excellent</strong></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- Link to GPA History Records -->
+                                <div class="mt-4 text-center">
+                                  <a href="gpa-history.html" class="btn btn-primary">View GPA History Records</a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="tab-pane fade" id="courses">
+                            <div class="container mt-4">
+                                <div class="container mt-4">
+                                    <!-- Display Entered Degree Information -->
+                                    <div class="card mb-4">
+                                      <div class="card-body">
+                                        <h5 class="card-title">
+                                            <a href="#" class="link-to-view" id="link-to-view">Degree Program Information</a> 
+                                        </h5>
+                                        <p class="card-text">You are enrolled in a <strong>Bachelor of Science in Computer Science</strong> program.</p>
+                                        <p class="card-text">Number of Years: <strong>4</strong></p>
+                                        <p class="card-text">Number of Semesters: <strong>8</strong></p>
+                                        <p class="card-text">Overall GPA: <strong>3.5</strong></p>
+                                      </div>
+                                    </div>
+                                
+                                    <!-- Button to Add a New Degree Course -->
+                                    <a href="courseadd.html"><button class="btn btn-success mb-3">Add Degree Course</button></a>
+                                
+                            
+                              <!-- Add Semester Modal -->
+                              
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="submitbtn">
-            <input type="button" name="Add" value="Add Subject" onclick="addRow()">
+        <div class="text-right mt-3">
         </div>
-        <script>
-            x=0;
-            function addRow(){
-                x = x+1;
-                var textfield = document.getElementById("row");
-                var container = document.getElementById("container");
-                var newfield = document.createElement("input");
-
-                newfield.type = "text";
-                newfield.name = "test["+x+"]"
-                newfield.placeholder = "Test";
-                var breakpoint = document.createElement("br");
-
-                container.appendChild(newfield);
-                container.appendChild(breakpoint);
-            }
-
-        </script>
     </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+
+    </script>
 </body>
+
 </html>
